@@ -41,13 +41,13 @@ Utils classes.
     }
     }
 
-   apply plugin: 'com.android.application'
-   apply plugin: 'kotlin-android'
-   apply plugin: 'kotlin-kapt'
-   apply plugin: 'kotlin-android-extensions'
-   apply plugin: 'io.fabric'
+    apply plugin: 'com.android.application'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-kapt'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'io.fabric'
 
-   android {
+    android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
