@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_gray"
+    android:id="@+id/rlsearchLocationRoot"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginBottom="@dimen/margin_2x"
+        app:cardPreventCornerOverlap="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin_1x"
+        app:cardElevation="0dip">
+
+        <RelativeLayout
+            android:padding="2dip"
+            android:background="@drawable/button_bg_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/imageview_dimen"
+                android:background="@drawable/default_placeholder"
+                android:scaleType="centerCrop" />
+
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/popularityTextView"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:drawableLeft="@drawable/ic_stars_white_24dp"
+                android:layout_width="wrap_content"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                tools:text="1"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_below="@id/imageView"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/margin_2x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_2"
+                android:paddingBottom="@dimen/margin_2"
+                android:background="@android:color/white"
+                android:textSize="@dimen/text_large"/>
+
+            <RelativeLayout
+                android:layout_below="@id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_2x"
+                    android:id="@+id/overviewTextView"
+                    android:gravity="left|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_2"
+                    android:lines="2"
+                    android:layout_toLeftOf="@+id/tvReadMore"
+                    android:paddingBottom="@dimen/margin_2"
+                    android:background="@android:color/white"
+                    android:textSize="@dimen/text_medium"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_1x"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tvReadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0284fe"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:text="Read More" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
